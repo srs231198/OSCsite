@@ -9,9 +9,12 @@
     margin-top: 130px; 
     margin-bottom: 90px;
 }
+.container.marketing {
+    margin-top: 50px;
+}
 
-#mainIntro {
-    text-align: center;
+#navBar {
+    margin-bottom: 50px;
 }
 #dreamTeam{
     text-align: center;

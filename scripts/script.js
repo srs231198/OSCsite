@@ -4,3 +4,7 @@
 //     $(".nav-item").removeClass("active");
 //     this.addClass("active");
 // });
+
+$( ".fadeIn" ).fadeIn( 3000, function() {
+    $( ".fadeIn" ).fadeIn( 100 );
+});

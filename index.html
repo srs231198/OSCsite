@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>OSC @ UTD</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/public/stylesheets/main.css">
+    <link href="/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="/css/theme-charcoal.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="/css/custom.css" rel="stylesheet" type="text/css" media="all"/>
     <script src="https://kit.fontawesome.com/f7461718e7.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 
-            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-primary" id="navBar">
 
                     <a class="navbar-brand" href="#">OSC</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,17 +25,19 @@
                   
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a href="" class="nav-link">Home</a>
+                        </li> -->
+                        <li class="nav-item">
+                          <a href="#origin" class="nav-link">
+                            About
+                          </a>
                         </li>
                         <li class="nav-item">
-                          <a href="#about" class="nav-link">Origins</a>
+                            <a href="#events" class="nav-link">Events</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#about" class="nav-link">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Team</a>
+                            <a class="nav-link" href="#team">Team</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"></a>
@@ -38,56 +45,106 @@
                       </ul>
                     </div>
                 </nav>
-
-    <div class="container">
-      <div class="page-header">
-          <div class="jumbotron jumbotron-fluid rounded-lg">
-              <div class="container">
-                  <h1 class="display-2">Hello, World!</h1>
-                  <p class="lead"></p>
-                  <p id="mainIntro">Welcome to main page for the Open Source Club at UT Dallas!!!</p>
-              </div>
-            </div>
-      </div>
-    </div>
-
-
-
+                
+                
+                <a name="top"></a>
+                <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light shadow-lg bg-white rounded" >
+                    <div class="col-md-5 p-lg-5 mx-auto my-5">
+                      <h1 class="display-4 font-weight-normal">Hello, World!</h1>
+                      <p class="lead font-weight-normal">
+                        Welcome to the Open Source Club at UT Dallas!!
+                        <strong>Our goal is to build a strong open source community on campus!</strong>
+                      </p>
+                    </div>
+                    <div class="product-device shadow-sm d-none d-md-block"></div>
+                    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+                  </div>
 
   <div class="container marketing">
 
         <!-- START THE FEATURETTES -->
-
+        <a name="origin"></a>
         <div class="container-fluid" id="dreamTeamContainer">
             <hr class="featurette-divider">
           <h1 id="dreamTeam">
-            Origins
+            About
           </h1>
           <hr class="featurette-divider">
         </div>
 
         <div class="row featurette" >
           <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">Open Source Club? <span class="text-muted">Doesn't UTD already have a linux club??</span></h2>
+            <p class="lead">
+              Yes, UTD does have a linux users group, and they're amazing!
+              <br>
+              But we're about <strong>Open Source Development</strong>! While Open Source is often associated with Linux, it's wayyy bigger than just an Operating System.
+              <br>
+              <strong>We want to introduce students to real-world software development using industry relevant tools!</strong>
+              <br>
+              For Fall 2019 we're focusing on web development using open source technologies.
+            </p>
           </div>
         </div>
 
         <div class="row featurette" id="secondOriginRow">
             <div class="col-md-11" style="text-align: right">
-              <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              <h2 class="featurette-heading">Oh okay, so you're doing web design?!<span class="text-muted"> Like a UI/UX club?</span></h2>
+              <p class="lead">
+                Ummm...Not Exactly. Although web design is an integral part of web development, we're going to cover all aspects of web development
+              , which includes front-end and back-end web development. 
+                <br>
+                The skills we're going to teach will help students with hackathons, personal projects, resume etc.
+              </p>
             </div>
           </div>
 
           <div class="row featurette">
               <div class="col-md-7">
-                <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                <h2 class="featurette-heading">Wait, how're you guys going to teach real-world software development?<span class="text-muted"> Don't the CS courses at UTD cover that?</span></h2>
+                <p class="lead">
+                  College level CS classes focus on logic and problem-solving, in order to build a strong foundation for long-term success.
+                  <br>
+                  But the tech industry moves very rapidly in terms of tools being used and technologies being adopted,
+                  <strong> just having a good GPA isn't enough!</strong>
+                  <br>
+                  Our philosophy is that people learn best by doing. So we'll have plenty of projects for our members to work on, and 
+                  <strong>If you have an idea that you want to implement, you can form a team and start coding right away!</strong>
+                  We support and encourage collaboration between students on projects.
+                </p>
               </div>
 
-            </div>
-    
+          </div>
+          <div class="row featurette" id="secondOriginRow">
+                <div class="col-md-11" style="text-align: right">
+                  <h2 class="featurette-heading">What kind of projects will I be able to work on?<span class="text-muted"> I don't wanna implement another inventory system in C++/Java</span></h2>
+                  <p class="lead">
+                    Web page redesign for UTD, making responsive web pages, making a fully functional blog application, playing with awesome API's, and much more. There's no limit to what 
+                    you can create given the right tools!
+                  </p>
+                </div>
+          </div>
+
+        <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">This is all so intimidating...<span class="text-muted"> I'm not sure if I'm ready for something like this</span></h2>
+                <p class="lead">
+                  How will you know if you don't try?
+                  <br>
+                  <strong>Our goal is to build a strong open source community on campus along with a culture of collaboration!</strong>
+                  <br>
+                  Everyone, {student, faculty, staff}, is welcome at our events!
+                  <br>
+                  We especially encourage participation from freshmen and sophomores students! Come over to get a taste of what you'll be doing in
+                  a software internship/job!
+                </p>
+              </div>
+
+        </div>
+
+
+
+            <a name="events"></a>
             <div class="container-fluid" id="dreamTeamContainer">
                 <hr class="featurette-divider">
               <h1 id="dreamTeam">
@@ -96,6 +153,24 @@
               <hr class="featurette-divider">
             </div>
 
+            <div class="row">
+              <div class="container" style="text-align: center; margin-top: 130px; margin-bottom: 130px;">
+                <div class="jumbotron jumbotron-fluid rounded-lg">
+                    <div class="container">
+                        <h1>
+                            Sorry,
+                            We're in the middle of planning amazing events! <br>
+                            Follow us on Social Media for Updates!!!
+                        </h1>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+
+
+
+      <a name="team"></a>
       <div class="container-fluid" id="dreamTeamContainer">
           <hr class="featurette-divider">
         <h1 id="dreamTeam">
@@ -105,60 +180,116 @@
       </div>
           <!-- Three columns of text below the carousel -->
           <div class="row">
-            <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <div class="col-lg-4 fadeIn" style="text-align: center;">
+              <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+              <div class="background-image-holder">
+                <img src="officerImages/20180416_213807.jpg" class="background-image" width="120" height="160" alt="A generic square placeholder image with rounded corners in a figure.">
+              </div>
+              <!-- <img src="officerImages/20180416_213807.jpg" alt="" class="bd-placeholder-img" width="180" height="200" focusable="false" role="img"> -->
               <h2>Shreyas Raj Singh</h2>
+
+              <h5><em>Founder and President</em></h5>
               
-              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+              <p>
+                Prefers to be called Raj; no one is sure why, and no one really cares.
+                A self-proclaimed web development expert, he aims to be a full-stack web developer.
+              </p>
+              <div class="d-inline-block">
+                <p><a href="https://www.linkedin.com/in/shreyasrajsingh/">LinkedIn &middot;</a></p>
+              </div>
+              <div class="d-inline-block">
+                <p><a href="https://github.com/srs231198">GitHub</a></p>
+              </div>
+              
               
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <div class="col-lg-4 fadeIn" style="text-align: center;">
+              <div class="background-image-holder">
+                <img src="officerImages/IMG_20181012_190555_306.jpg" class="background-image" width="160" height="160" alt="A generic square placeholder image with rounded corners in a figure.">
+              </div>              
               <h2>Alex Frangeskou</h2>
+              <h5><em>Co-Founder and Vice-President</em></h5>
               
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-              
+              <p>Alex is the resident linux user, with a passion for all things open source. Interests include powerlifting, breaking his linux installs and working on projects. </p>
+              <div class="d-inline-block">
+                  <p><a href="https://github.com/AlexFrangeskou">GitHub</a></p>
+              </div>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <div class="col-lg-4 fadeIn" style="text-align: center;">
+                <div class="background-image-holder">
+                    <img src="officerImages/arshdeep_pic.jpeg" class="background-image" width="160" height="160" alt="A generic square placeholder image with rounded corners in a figure.">
+                </div>
               <h2>Arshdeep Singh</h2>
-              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              
+              <h5><em>Co-Founder and Operations Director</em></h5>
+              <p>
+                 Arsh is a sophomore majoring in CS with a passion for programming, math and statistics. 
+                 His go-to leisure activitiy is to watch and read about technology, astrophysics and Soccer!
+              </p>
+              <div class="d-inline-block">
+                  <p><a href="https://www.linkedin.com/in/arshdeep-singh-a86463163/">LinkedIn &middot;</a></p>
+              </div>
+              <div class="d-inline-block">
+                  <p><a href="https://github.com/arshreality">GitHub</a></p>
+              </div>
             </div><!-- /.col-lg-4 -->
           </div><!-- /.row -->
                     <!-- Three columns of text below the carousel -->
-                    <div class="row">
-                        <div class="col-lg-4">
-                          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                    <div class="row ">
+                        <div class="col-lg-4 " style="text-align: center;">
+                          <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+                          <div class="background-image-holder">
+                              <img src="officerImages/shivani_pic3.jpg" class="background-image" width="180" height="230" alt="A generic square placeholder image with rounded corners in a figure.">
+                          </div>                          
                           <h2>Shivani Gandhi</h2>
-                          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                          <h5><em>Co-Founder and Social Media Director</em></h5>
+                          <p>Shivani is sophomore SE major with a minor in business administration.
+                             She loves networking and getting to meet new people, so needless to say she's the most social of the 
+                             officers!
+                          </p>
+                          <div class="d-inline-block">
+                              <p><a href="https://linkedin.com/in/shivani-gandhi-488155183/">LinkedIn</a></p>
+                          </div>
                           
                         </div><!-- /.col-lg-4 -->
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" style="text-align: center;">
                           <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
                           <h2>Abhishek Nattamai</h2>
+                          <h5><em>Co-Founder and Events Director</em></h5>
                           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                           
                         </div><!-- /.col-lg-4 -->
-                        <div class="col-lg-4">
-                          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                          <h2>Arpan</h2>
+                        <div class="col-lg-4" style="text-align: center;">
+                            <div class="background-image-holder">
+                                <img src="officerImages/arpan_image.jpeg" class="background-image" width="160" height="160" alt="A generic square placeholder image with rounded corners in a figure.">
+                            </div>                          
+                            <h2>Arpan</h2>
+                          <h5><em>Co-Founder and Project Lead</em></h5>
                           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                          
+                          <div class="d-inline-block">
+                              <p><a href="https://www.linkedin.com/in/realarpan/">LinkedIn</a></p>
+                          </div>
                         </div><!-- /.col-lg-4 -->
                       </div><!-- /.row -->
             <div class="row">
-              <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                <h2>Zareen Malik</h2>
+              <div class="col-lg-4" style="text-align: center;">
+                  <div class="background-image-holder">
+                      <img src="officerImages/zareen_img.jpeg" class="background-image" width="160" height="160" alt="A generic square placeholder image with rounded corners in a figure.">
+                  </div>                
+                  <h2>Zareen Malik</h2>
+                <h5><em>Co-Founder and Graphics Designer</em></h5>
                 <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <div class="d-inline-block">
+                    <p><a href="https://www.linkedin.com/in/zareen-malik-16925b16b/">LinkedIn</a></p>
+                </div>
+              
               </div>
             </div>
   </div>
   
     <!-- FOOTER -->
+    <hr class="featurette-divider">
     <footer class="container" id="footR">
-        <p class="float-right"><a href="#">Back to top</a></p>
+        <p class="float-right"><a href="#top">Back to top</a></p>
         <p>&copy; Copyright 2019 OSC UTD, All Rights Reserved</p>
     </footer>
 
