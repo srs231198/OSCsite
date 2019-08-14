@@ -21,6 +21,7 @@
     "ejs": "^2.6.2",
     "express": "^4.17.1",
     "method-override": "^3.0.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "themify-icons": "^1.0.0"
   }
 }
