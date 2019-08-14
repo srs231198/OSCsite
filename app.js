@@ -21,6 +21,4 @@ router.get('/', function(req,res){
 ///add the router
 app.use('/', router);
 
-app.listen(3000, function(){
-    console.log("Server is running!")
-});
+app.listen(process.env.PORT);
