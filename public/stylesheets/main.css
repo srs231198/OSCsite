@@ -12,6 +12,15 @@
 .container.marketing {
     margin-top: 50px;
 }
+.fab {
+    font-display: auto;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    visibility: visible;
+  }
 
 #navBar {
     margin-bottom: 50px;
