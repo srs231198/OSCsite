@@ -31,8 +31,11 @@
 }
 #dreamTeamContainer{
     background-color: #047AFB;
+    margin-bottom: 50px;
 }
 #footR {
     margin-top: 30px;
 }
-
+#calendarTitle {
+    visibility: hidden;
+}
